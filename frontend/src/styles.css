@@ -1,0 +1,10 @@
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0a1f44; /*  blu scuro */
+  font-family: "Poiret One", sans-serif;
+  color:  #fff/* #012a4a */;
+  height: 100%;
+}
+/* You can add global styles to this file, and also import other style files */

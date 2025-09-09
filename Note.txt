@@ -1,0 +1,11 @@
+Inizialmente avevo messo la gestione dei progetti insieme alla funzione del login/registrazione. Vedendo che ne usciva un pasticcio ho deciso di separare i due file in modo da avere un codice piu' pulito e leggibile. Oltre che in ordine.
+Mi sono "dimenticata" di cambiare alcuni exports e ovviamente mi hanno dato errore. Devo fare piu' attenzione.
+
+Il file app.html e', di conseguenza, diventato il contenitore principale del contenuto del router.
+
+Ho generato una specie di "guardia" per controllare se il token di chi vuole eseguire l'accesso sia valido o meno.
+
+Quando creo dei file HTML, come in questo progetto, devo utilizzare la direttiva [(ngModel)] per collegare i campi di input alle variabili del componente (username e password).
+
+Anche i pulsanti devono avere un evento (nbSubmit) sul form per lanciare il login.
+

@@ -1,0 +1,72 @@
+
+  <div class="container">
+
+<hr>
+  <h1 class="title">Gestione Progetti</h1>
+
+
+  <!-- Form aggiungi progetto -->
+  <div class="card form-card">
+    <h3>Aggiungi un nuovo progetto!</h3>
+    <form (ngSubmit)="addProject()">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" [(ngModel)]="newProject.name" name="name" required>
+      <label for="descrizione">Descrizione:</label>
+      <textarea id="Descrizione" [(ngModel)]="newProject.description" name="description"></textarea>
+      <select [(ngModel)]="newProject.status" name="status" required>
+        <option value="Da fare">Da fare</option>
+        <option value="In corso">In corso</option>
+        <option value="Completato">Completato</option>
+      </select>
+      <button type="submit" class="btn" >Aggiungi Progetto</button>
+      
+    </form>
+  </div>
+
+  <!-- Modifica progetto -->
+  <div *ngIf="selectedProject" class="card form-card">
+    <h3>Modifica Progetto</h3>
+    <form (ngSubmit)="updateProject()">
+      <input type="text" [(ngModel)]="selectedProject.name" name="name" required>
+      <textarea [(ngModel)]="selectedProject.description" name="description"></textarea>
+      <select [(ngModel)]="selectedProject.status" name="status" required>
+        <option value="Da fare">Da fare</option>
+        <option value="In corso">In corso</option>
+        <option value="Completato">Completato</option>
+      </select>
+      <button type="submit" class="btn">Salva Modifiche</button>
+    </form>
+  </div>
+
+  <!-- Lista progetti -->
+  <div *ngFor="let project of projects" class="card project-card">
+    <h2>{{ project.name }}</h2>
+    <h3>Descrizione:</h3>
+    <p>{{ project.description }}</p>
+    <h3>Status: </h3>
+    <p> {{ project.status }}</p>
+    <button class="btn" (click)="selectProject(project)">Modifica</button>
+    <button class="btn delete" (click)="deleteProject(project._id)">Elimina</button>
+
+    <!-- Task -->
+    <div class="tasks">
+      <form (ngSubmit)="addTask(project._id)" class="task-form">
+        <label for="task">Nuova task: </label>
+        <input type="text" class="task-input" [(ngModel)]="newTask.name" name="task-name-{{project._id}}" id="task" required>
+        <button type="submit" class="btn add-task">Aggiungi</button>
+      </form>
+<h4>Task: </h4>
+      <ul>
+        <li *ngFor="let task of project.tasks" [class.completed]="task.isCompleted">
+          <input type="checkbox" [(ngModel)]="task.isCompleted" (change)="toggleTaskCompletion(task)">
+          {{ task.name }}
+          <button class="btn delete" (click)="deleteTask(task._id)">Elimina</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+  

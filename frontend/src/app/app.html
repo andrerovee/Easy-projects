@@ -1,0 +1,7 @@
+<nav class="nav">
+  <button *ngIf="authService.isLoggedIn()" (click)="logout()">Logout</button>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

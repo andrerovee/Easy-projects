@@ -1,0 +1,111 @@
+/* Coastal Blues */
+
+h1 {
+    color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.container {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.7rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #0a1f44;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #01497c; /* blu chiaro */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+   width: 100%;         /* tutte larghe uguali */
+  min-height: 300px;   /* altezza minima */
+  box-sizing: border-box; 
+}
+
+.form-card input, .form-card textarea, .form-card select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: #61a5c2 ;
+  font-weight: 700;
+  font-style: normal;
+  resize: none; /* blocca il ridimensionamento */
+  max-height: 150px; /* altezza massima fissa */
+  font-size: 25px;
+  font-family: "Poiret One", sans-serif;
+}
+
+.task-input {
+  display: block;
+  width: 100%;             /* prende tutta la larghezza */
+  min-height: 30px; 
+  max-height: 150px;      /* come la descrizione */
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #61a5c2;  /* stesso colore della descrizione */
+  font-size: 1rem;
+  font-weight: 500;
+  resize: none;   
+  padding-right: 0px; 
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;        /* per evitare che venga ridimensionato */
+}
+
+
+.btn {
+  background-color: #2c7da0;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #89c2d9;
+  color: black;
+}
+
+.btn.delete {
+  background-color: #9d0208;
+}
+
+.btn.delete:hover {
+  background-color: #780000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.tasks {
+  margin-top: 15px;
+
+}
+

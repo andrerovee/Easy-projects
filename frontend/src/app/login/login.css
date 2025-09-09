@@ -1,0 +1,92 @@
+/* Coastal Blues */
+
+h1 {
+    color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.container {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.7rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #0a1f44;
+  min-height: 100vh;
+  font-family: "Poiret One", sans-serif;
+}
+
+.card {
+  background-color: #01497c; /* blu chiaro */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+   width: 100%;         /* tutte larghe uguali */
+  min-height: 300px;   /* altezza minima */
+  box-sizing: border-box; 
+}
+
+.form-group input, .form-controll {
+   display: block;
+  width: 30%;
+  margin-bottom: 10px;
+  margin: auto;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: #61a5c2 ;
+  font-weight: 700;
+  font-style: normal;
+  resize: none; /* blocca il ridimensionamento */
+  max-height: 150px; /* altezza massima fissa */
+  font-size: 25px;
+  font-family: "Poiret One", sans-serif;
+  
+}
+
+
+.btn {
+  background-color: #2c7da0;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #89c2d9;
+  color: black;
+}
+
+.nav button {
+  background-color: #2c7da0;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: bold;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+  color: #fff;
+}
+
+.nav button:hover {
+  background-color: #89c2d9;
+  color: black;
+}
+
